@@ -11,7 +11,7 @@ _My solutions to
 *   [Factorialize a Number](#factorialize-a-number)
 
 
-### Convert Celsius to Fahrenheit
+### [Convert Celsius to Fahrenheit](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/convert-celsius-to-fahrenheit)
 
 _The algorithm to convert from Celsius to Fahrenheit is the temperature in Celsius times 9/5, plus 32._
 
