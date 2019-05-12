@@ -6,12 +6,12 @@ _My solutions to
 
 # Quizzes 
 ## Introduction to Basic Algorithm Scripting
-1.  [Convert Celsius to Fahrenheit](#1.-Convert-Celsius-to-Fahrenheit)
-2.  [Reverse a String](#2.-Reverse-a-String)
-3.  [Factorialize a Number](#3.-Factorialize-a-Number)
+*   [Convert Celsius to Fahrenheit](#convert-celsius-to-fahrenheit)
+*   [Reverse a String](#reverse-a-string)
+*   [Factorialize a Number](#factorialize-a-number)
 
 
-### [1. Convert Celsius to Fahrenheit](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/convert-celsius-to-fahrenheit)
+### Convert Celsius to Fahrenheit
 
 _The algorithm to convert from Celsius to Fahrenheit is the temperature in Celsius times 9/5, plus 32._
 
@@ -24,7 +24,12 @@ function convertToF(celsius) {
 convertToF(30);
 ```
 
-### [2. Reverse a String](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/reverse-a-string)
+<div align="right">
+    <b><a href="#quizzes">↥ back to top</a></b>
+</div>
+
+
+### [Reverse a String](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/reverse-a-string)
 
 _Reverse the provided string. Your result must be a string._
 ```js
@@ -34,8 +39,11 @@ function reverseString(str) {
 
 reverseString("hello");
 ```
+<div align="right">
+    <b><a href="#quizzes">↥ back to top</a></b>
+</div>
 
-### [3. Factorialize a Number](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/factorialize-a-number/)
+### [Factorialize a Number](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/factorialize-a-number/)
 
 _Return the factorial of the provided integer. Only integers greater than or equal to zero will be supplied to the function._
 ```js
@@ -47,3 +55,6 @@ function factorialize(num) {
   }
 factorialize(5);
 ```
+<div align="right">
+    <b><a href="#quizzes">↥ back to top</a></b>
+</div>
