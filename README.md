@@ -47,6 +47,7 @@ reverseString("hello");
 
 _Return the factorial of the provided integer. Only integers greater than or equal to zero will be supplied to the function._
 ```js
+//recursive
 function factorialize(num) {
   if ( num <= 1) {
     return 1;
@@ -55,6 +56,19 @@ function factorialize(num) {
   }
 factorialize(5);
 ```
+
+```js
+//iterative
+function factorialize(num) {
+  for (var i = num - 1; i >= 1; i--){
+    num *= i;
+  }
+  console.log(num);
+}
+
+factorialize(5);
+```
+
 <div align="right">
     <b><a href="#quizzes">↥ back to top</a></b>
 </div>
