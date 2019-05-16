@@ -12,7 +12,10 @@ _My solutions to
 *   [Find the Longest Word in a String](#find-the-longest-word-in-a-string)
 *   [Return Largest Numbers in Arrays](#return-largest-numbers-in-arrays)
 *   [Repeat a String Repeat a String](#repeat-a-string-repeat-a-string)
+*   [Truncate a String](#truncate-a-string)
 * [Finders Keepers](#finders-keepers)
+
+
 
 
 ### [Convert Celsius to Fahrenheit](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/convert-celsius-to-fahrenheit)
@@ -147,6 +150,26 @@ return "";
 
 repeatStringNumTimes("abc", 1);
 ```
+
+### [Truncate a String](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/truncate-a-string)
+
+_Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a ```...``` ending._
+
+```js
+function truncateString(str, num) {
+//   if (num < str.length) {
+//     return(str.substring(0,num) + '...');
+//   } else {
+//  return str;
+//   }
+// }
+return num < str.length ? str.substring(0,num) + '...' : str;
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
+```
+
+
 <div align="right">
     <b><a href="#quizzes">↥ back to top</a></b>
 </div>
