@@ -12,6 +12,7 @@ _My solutions to
 *   [Find the Longest Word in a String](#find-the-longest-word-in-a-string)
 *   [Return Largest Numbers in Arrays](#return-largest-numbers-in-arrays)
 *   [Repeat a String Repeat a String](#repeat-a-string-repeat-a-string)
+* [Finders Keepers](#finders-keepers)
 
 
 ### [Convert Celsius to Fahrenheit](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/convert-celsius-to-fahrenheit)
@@ -120,6 +121,9 @@ function largestOfFour(arr) {
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 ```
+<div align="right">
+    <b><a href="#quizzes">↥ back to top</a></b>
+</div>
 
 ### [Repeat a String Repeat a String](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/repeat-a-string-repeat-a-string/)
 
@@ -143,3 +147,27 @@ return "";
 
 repeatStringNumTimes("abc", 1);
 ```
+<div align="right">
+    <b><a href="#quizzes">↥ back to top</a></b>
+</div>
+
+### [Finders Keepers](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/finders-keepers)
+
+_Create a function that looks through an array (first argument) and returns the first element in the array that passes a truth test (second argument). If no element passes the test, return undefined._
+
+```js
+function findElement(arr, func) {
+  for (var i = 0; i <= arr.length; i++) {
+    let num = arr[i];
+    if (func(num)) {
+      return num
+    }
+  }
+  return undefined
+}
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
+```
+<div align="right">
+    <b><a href="#quizzes">↥ back to top</a></b>
+</div>
