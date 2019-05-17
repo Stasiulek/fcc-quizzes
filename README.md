@@ -194,3 +194,29 @@ findElement([1, 2, 3, 4], num => num % 2 === 0);
 <div align="right">
     <b><a href="#quizzes">↥ back to top</a></b>
 </div>
+
+
+[Write Number In Expanded Form](https://www.codewars.com/kata/write-number-in-expanded-form/javascript)
+
+_You will be given a number and you will need to return it as a string in Expanded Form. For example:
+expandedForm(12); // Should return '10 + 2'
+expandedForm(42); // Should return '40 + 2'
+expandedForm(70304); // Should return '70000 + 300 + 4'
+NOTE: All numbers will be whole numbers greater than 0._
+
+```js
+function expandedForm(num) {
+
+    numString = num.toString();
+    var arrLong = [];
+    for (var i = 0; i < numString.length; i++) {
+        if (numString[i] !== '0') {
+            arrLong.push(numString[i] +
+                "0".repeat(numString.length - i - 1));
+        }
+    }
+    return(arrLong.join(' + '));
+}
+
+expandedForm(70304);
+```
