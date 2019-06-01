@@ -1,11 +1,11 @@
 # fcc-quizzes
 
-## About
-_My solutions to 
-[FreeCodeCamp](https://learn.freecodecamp.org/) quizzes for reference._
+# About
+_My solutions to programming quizzes for reference._
 
 # Quizzes 
 ## Introduction to Basic Algorithm Scripting
+[FreeCodeCamp](https://learn.freecodecamp.org/)
 *   [Convert Celsius to Fahrenheit](#convert-celsius-to-fahrenheit)
 *   [Reverse a String](#reverse-a-string)
 *   [Factorialize a Number](#factorialize-a-number)
@@ -18,10 +18,11 @@ _My solutions to
 *   [Title Case a Sentence](#title-case-a-sentence)
 *   [Falsy Bouncer](#falsy-bouncer)
 *   [Slice and Splice](#slice-and-splice)
-*   [Where do I Belong](#wwere-do-i-belong)
+*   [Where do I Belong](#where-do-i-belong)
 *   [Mutations](#mutations)
 
-
+[Leetcode](https://leetcode.com)
+*   [771. Jewels and Stones](#jewels-and-stones)
 
 ### [Convert Celsius to Fahrenheit](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/convert-celsius-to-fahrenheit)
 
@@ -343,6 +344,63 @@ mutation(["hello", "hey"]);
 <div align="right">
     <b><a href="#quizzes">↥ back to top</a></b>
 </div>
+
+
+### [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
+
+_You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels._
+
+**brute force - time complexity O(n.m)**
+```js
+/**
+ * @param {string} J
+ * @param {string} S
+ * @return {number}
+ */
+var numJewelsInStones = function(J, S) {
+    //O(nm) time complexity
+    var num = 0;   
+    for (var i = 0; i < J.length; i++) { // O(n)
+        for (var j = 0; j < S.length; j++) { // O(m)
+            if (J[i] === S[j]) { // O(1)
+                num++;
+            }
+        }
+    }
+    return num        
+};
+```
+
+**hashmap - time complexity O(n)**
+```js
+/**
+ * @param {string} J
+ * @param {string} S
+ * @return {number}
+ */
+var numJewelsInStones = function(J, S) {
+
+    //create hashmap of gems
+    
+    var gems = {};   
+    for (var i = 0; i < J.length; i++) {
+        //SYNTAX gems[key] = val;
+        gems[J[i]] = true; //value not important as checking for just _existence_
+    }
+    //check stones in S against hashmap to see which are gems    
+    //declare counter
+    var number = 0;
+    
+    for (var i = 0; i < S.length; i++) {
+        if (gems[S[i]] == true) {
+            number++;
+        }
+    }
+    return number
+    
+};
+```
+
 
 
 ### [Write Number In Expanded Form](https://www.codewars.com/kata/write-number-in-expanded-form/javascript)
